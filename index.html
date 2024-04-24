@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAtch Day Pro</title>
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      input[type="radio"]:checked + label {
+        border-color: #9c73c5; /* Change to the desired color */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div
+        class="bg-hero h-[100vh] bg-cover bg-no-repeat pt-5 bg-[url('./assets/heroBg.png')]"
+      >
+        <div class="flex h-[79px] bg-[#1A1A1A] justify-between px-4">
+          <div class="flex items-center">
+            <img
+              src="./assets/homeIcon.png"
+              alt="homeIcon"
+              class="h-[40px] w-[40px]"
+            />
+          </div>
+          <div
+            class="bg-[#A7BCD0] w-[100px] h-[100px] lg:h-[160px] lg:w-[160px] p-4 rounded-[50%] translate-y-[-10px]"
+          >
+            <img src="./assets/logo.png" alt="logo" class="bg-none" />
+          </div>
+          <div class="hidden md:flex gap-1 pl-10 overflow-hidden w-[200px]">
+            <div
+              class="h-[140%] w-[10px] bg-[#092537] rotate-[40deg] mt-[-15px]"
+            ></div>
+            <div
+              class="h-[130%] w-[10px] bg-[#1A1A1A] rotate-[40deg] mt-[-12px]"
+            ></div>
+            <div
+              class="h-[140%] w-[10px] bg-[#092537] rotate-[40deg] mt-[-15px]"
+            ></div>
+          </div>
+        </div>
+        <div class="pt-6 sm:pt-3 flex justify-end pr-5">
+          <button
+            class="bg-[#65D9AE] text-black text-xl font-bold px-8 py-2 rounded-lg"
+          >
+            SIGN IN
+          </button>
+        </div>
+        <div
+          class="relative flex flex-col pb-[40px] justify-center gap-[20px] pl-[40px] h-[90vh]"
+        >
+          <div>
+            <span
+              class="bg-[#9C73C5] text-white text-[1.2rem] lg:text-[2rem] font-bold py-3 px-6 justify-center absolute translate-x-[70px] translate-y-[-20px] lg:-translate-y-[25px]"
+            >
+              BECOME OUR
+            </span>
+            <br />
+
+            <span
+              class="bg-[#9C73C5] text-white text-[2rem] lg:text-[4rem] font-bold px-6 flex w-[90%] sm:w-[60%] justify-between"
+            >
+              GAMECHANGER
+              <div class="flex gap-4 w-[200px] overflow-hidden pl-[50px]">
+                <div
+                  class="h-[170%] w-[10px] bg-[#B2C7DC] rotate-[40deg] mt-[-35px]"
+                ></div>
+                <div
+                  class="h-[170%] w-[10px] bg-[#B2C7DC] rotate-[40deg] mt-[-35px]"
+                ></div>
+              </div>
+            </span>
+          </div>
+          <div>
+            <div
+              class="bg-[#000000] text-white py-4 px-7 text-[1rem] sm:text-[1.3rem] w-[90%] sm:w-[80%] md:w-[50%] font-bold"
+            >
+              Help us improve our app for the euro{"’"}s 2024 AND RECEIVE SOME
+              UNIQUE PRIZES. SIGN IN FOR MORE INFO. BECOME A GAMECHANGER!
+            </div>
+          </div>
+          <div class="text-center w-[50%]">
+            <button
+              class="bg-[#65D9AE] text-black text-xl font-bold px-8 py-2 rounded-lg relative z-10"
+            >
+              SIGN IN
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black md:min-h-[250px] pt-[40px] pb-[40px]">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] w-[80%] md:w-[90%] mx-auto"
+        >
+          <div
+            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold flex items-center"
+          >
+            PAY WITH US AND EARN AMAZING GIFTS
+          </div>
+          <div
+            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold"
+          >
+            <span class="hidden text-[5px]">....</span>
+            <br />
+            INVITE FRIENDS AND EARN <span class="text-[#65D9AE]"> MORE </span>
+            AMAZING GIFTS
+          </div>
+          <div
+            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold"
+          >
+            SHARE YOUR THOUGHTS AND BECOME OUR
+            <span class="text-[#9C73C5]">GAMECHANGER</span>!
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 p-[30px] min-h-[300px] w-[100%] lg:w-[80%] mx-auto"
+      >
+        <div class="flex flex-col gap-6">
+          <h3 class="text-[1.4rem] sm:text-[2rem] font-bold">
+            HELP US GET READY FOR THE EUROS 2024
+          </h3>
+          <div
+            class="flex flex-col gap-3 text-[1.2rem] sm:text-[1.4rem] text-justify"
+          >
+            <p>
+              Using your expert football knowledg, buy and sell players live
+              during the match as their value goes up and down, including real
+              time news, statistics and analysis.To get the most excited players
+              for the Euros 2024 we need you to help us to get the maximum
+              gemeplay for our app.
+            </p>
+            <p>
+              If you want to play and check out the MatchdayPro app in the
+              upcoming games with your club in April and May and get rewarded
+              for that, Sign in the form and soon we will let you know if you
+              are one of the 500 lucky ones. Just fill in the form below!
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center md:justify-end order-[-1] sm:order-1">
+          <img
+            src="/assets/shirt.png"
+            alt="shirt"
+            class="w-[300px] sm:w-[400px]"
+          />
+        </div>
+      </div>
+      <div
+        class="h-[40vh] sm:h-[80vh] bg-cover flex justify-center items-center bg-[url('/assets/videoFrame.png')]"
+      >
+        <img src="/assets/playBtn.png" alt="" class="h-[80px]" />
+      </div>
+      {/* */}
+      <div class="bg-[#000] p-[20px]">
+        <div class="text-center flex justify-center p-[20px]">
+          <button
+            type="submit"
+            class="bg-[#9C73C5] text-white h-[50px] w-[150px] font-bold cursor-pointer flex items-center px-[10px] gap-[20px] overflow-hidden"
+          >
+            SIGN UP
+            <div class="flex gap-2">
+              <div class="w-[5px] h-[100px] bg-black rotate-[45deg]"></div>
+              <div class="w-[3px] h-[100px] bg-black rotate-[45deg]"></div>
+            </div>
+          </button>
+        </div>
+        <form
+          action="https://formsubmit.co/support@matchday.pro"
+          method="post"
+          class="bg-[#191919] w-[100%] md:w-[80%] lg:w-[70%] mx-auto p-[10px] rounded-lg mt-[20px]"
+        >
+          <div class="mx-auto flex flex-col gap-4">
+            <input
+              type="text"
+              placeholder="Name"
+              name="Name"
+              required
+              class="w-[95%] mx-auto p-[10px] bg-[#191919] border border-[#838383] rounded-lg focus:outline-none text-[#838383]"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+              required
+              class="w-[95%] mx-auto p-[10px] bg-[#191919] border border-[#838383] rounded-lg focus:outline-none text-[#838383]"
+            />
+          </div>
+          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+            <label
+              for="Gender"
+              class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
+            >
+              GENDER
+            </label>
+            <div class="flex-1 grid grid-cols-4 col-span-2 text-right">
+              <div>
+                <input
+                  type="radio"
+                  name="Gender"
+                  id="Male"
+                  value="Male"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Male"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  Male
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="Gender"
+                  id="Female"
+                  value="Female"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Female"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg py-[5px] sm:px-[15px] sm:py-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  Female
+                </label>
+              </div>
+              <div class="col-span-2">
+                <input
+                  type="radio"
+                  name="Gender"
+                  id="Other"
+                  value="Other"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Other"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  Other
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+            <label
+              class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
+            >
+              PLAYING FROM
+            </label>
+            <div class="flex-1 grid grid-cols-4 col-span-2 text-right">
+              <div>
+                <input
+                  type="radio"
+                  name="Nationality"
+                  id="NL"
+                  value="NL"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="NL"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  NL
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="Nationality"
+                  id="UK"
+                  value="UK"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="UK"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  UK
+                </label>
+              </div>
+              <div class="col-span-2">
+                <input
+                  type="radio"
+                  name="Nationality"
+                  id="Others"
+                  value="Others"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Others"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                >
+                  Other
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+            <label
+              class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
+            >
+              AGE
+            </label>
+            <div class="flex-1 grid grid-cols-3 col-span-2 text-right">
+              <div>
+                <input
+                  type="radio"
+                  name="Age"
+                  id="13-18"
+                  value="13-18"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="13-18"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                >
+                  13-18
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="Age"
+                  id="19-35"
+                  value="19-35"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="19-35"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                >
+                  19-35
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="Age"
+                  id="36+"
+                  value="36+"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="36+"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                >
+                  36+
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+            <label
+              class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
+            >
+              GAMEPLAY
+            </label>
+            <div class="flex-1 grid grid-cols-2 col-span-2 text-right">
+              <div>
+                <input
+                  type="radio"
+                  name="GamePlay"
+                  id="Love to play"
+                  value="Love to play"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Love to play"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                >
+                  Love to play
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="GamePlay"
+                  id="Competetive"
+                  value="Competetive"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="Competetive"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                >
+                  Competetive
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="text-white px-[15px] py-[10px] grid grid-cols-3">
+            <label
+              class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
+            >
+              CAN GET # <br />
+              OF FRIENDS TO PLAY
+            </label>
+            <div class="flex-1 grid grid-cols-3 col-span-2 text-right">
+              <div>
+                <input
+                  type="radio"
+                  name="GetFriends"
+                  id="5+"
+                  value="5+"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="5+"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                >
+                  5+
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="GetFriends"
+                  id="15+"
+                  value="15+"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="15+"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                >
+                  15+
+                </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="GetFriends"
+                  id="25+"
+                  value="25+"
+                  required
+                  class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
+                />
+                <label
+                  for="25+"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                >
+                  25+
+                </label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <textarea
+              name="Review"
+              id="review"
+              cols="30"
+              rows="5"
+              class="bg-[#191919] p-[10px] w-[95%] mx-auto block min-[100px] border border-[#838383] outline-none text-[#838383] text-[1rem] font-bold rounded-lg resize-none"
+              placeholder="I want to be a gamechanger because ..."
+              required
+            ></textarea>
+          </div>
+          <div class="text-center p-[20px]">
+            <button
+              type="submit"
+              class="bg-[#65D9AE] px-[30px] py-[10px] font-bold rounded-lg cursor-pointer"
+            >
+              SIGN IN
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="py-[30px] text-center flex flex-col gap-3">
+        <h3
+          class="text-[1rem] sm:text-[1.4rem] md:text-[2rem] font-bold text-[#9C73C5]"
+        >
+          DOWNLOAD THE APP AND BECOME
+          <span class="text-[#65D9AE]">THE BEST</span>
+          MANAGER!
+        </h3>
+        <div class="flex justify-center gap-2">
+          <img src="/assets/appBtn.png" alt="" class="w-[140px] h-[50px]" />
+          <img src="/assets/iosBtn.png" alt="" class="w-[140px] h-[50px]" />
+        </div>
+      </div>
+      <div
+        class="bg-[#000] overflow-hidden py-[20px] px-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] lg:gap-[10px]"
+      >
+        <div class="flex h-[120px]">
+          <div>
+            <p class="text-[#65D9AE] font-bold text-[1.4rem]">MATCHDAY.PRO</p>
+            <div class="text-white text-[1.2rem]">
+              <p>Terms & conditions</p>
+              <p>Privacy Policy</p>
+              <p>Contest Rules</p>
+            </div>
+          </div>
+          <div class="hidden lg:flex gap-2">
+            <div
+              class="h-[250px] w-[4px] bg-white rotate-[45deg] translate-y-[-60px]"
+            ></div>
+            <div
+              class="h-[250px] w-[2px] bg-white rotate-[45deg] translate-y-[-60px]"
+            ></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-[#65D9AE] font-bold text-[1.4rem]">Legal & Info</p>
+          <div class="text-white text-[1.2rem]">
+            <p>Terms & conditions</p>
+            <p>Privacy Policy</p>
+            <p>Contest Rules</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-[#65D9AE] font-bold text-[1.4rem]">Contact</p>
+          <div class="text-white text-[1.2rem]">
+            <p>Email: support@matchday.pro</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-[#65D9AE] font-bold text-[1.4rem]">Legal & Info</p>
+          <div class="text-white text-[1.2rem]">
+            <p>Terms & conditions</p>
+            <p>Privacy Policy</p>
+            <p>Contest Rules</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#9C73C5] text-white text-center py-[15px] text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] font-bold"
+      >
+        © 2023 Matchday Pro is a trademark of SPOXX B.V., trading as AXXS
+        Gaming. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
