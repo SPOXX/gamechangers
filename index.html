@@ -3,35 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matchday Pro - Gamechangers</title>
-    <script defer src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/output.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Matchday Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.gif">
     <style>
       input[type="radio"]:checked + label {
-        border-color: #9c73c5;
+        background-color: #9c73c5;
       }
     </style>
   </head>
   <body>
-    <div>
+    <div class="py-0">
       <div
-        class="bg-hero h-[100vh] bg-cover bg-no-repeat pt-5 bg-[url('assets/heroBg.png')]"
+        class="bg-hero h-[100vh] -mt-1 bg-cover bg-no-repeat pt-5 bg-[url('./assets/heroBg.png')]"
       >
-        <div class="flex h-[79px] bg-[#1A1A1A] justify-between px-4">
+        <div class="h-[79px] bg-[#1A1A1A] flex justify-between px-4">
           <div class="flex items-center">
             <img
-              src="assets/homeIcon.png"
+              src="./assets/homeIcon.png"
               alt="homeIcon"
               class="h-[40px] w-[40px]"
             />
           </div>
           <div
-            class="bg-[#A7BCD0] w-[100px] h-[100px] lg:h-[160px] lg:w-[160px] p-4 rounded-[50%] translate-y-[-10px]"
+            class="bg-[#A7BCD0] w-[100px] h-[100px] lg:h-[160px] lg:w-[160px] p-4 rounded-[50%] ml-[60px] translate-y-[-10px]"
           >
-            <img src="assets/logo.png" alt="logo" class="bg-none" />
+            <img src="./assets/logo.png" alt="logo" class="bg-none" />
           </div>
-          <div class="hidden md:flex gap-1 pl-10 overflow-hidden w-[200px]">
+          <div class="hidden md:flex gap-1 pl-10 overflow-hidden w-[110px]">
             <div
               class="h-[140%] w-[10px] bg-[#092537] rotate-[40deg] mt-[-15px]"
             ></div>
@@ -79,7 +80,7 @@
             <div
               class="bg-[#000000] text-white py-4 px-7 text-[1rem] sm:text-[1.3rem] w-[90%] sm:w-[80%] md:w-[50%] font-bold"
             >
-              Help us improve our app for the euro{"’"}s 2024 AND RECEIVE SOME
+              Help us improve our app for the euro's 2024 AND RECEIVE SOME
               UNIQUE PRIZES. SIGN IN FOR MORE INFO. BECOME A GAMECHANGER!
             </div>
           </div>
@@ -97,28 +98,26 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] w-[80%] md:w-[90%] mx-auto"
         >
           <div
-            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold flex items-center"
+            class="bg-[#191919] w-[290px] rounded-lg text-[1rem] sm:text-[1.3rem] md:text-[1.4rem] text-white text-center py-[20px] px-[30px] font-bold"
           >
             PAY WITH US AND EARN AMAZING GIFTS
           </div>
           <div
-            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold"
+            class="bg-[#191919] w-[290px] rounded-lg text-[1rem] sm:text-[1.3rem] md:text-[1.4rem] text-white text-center py-[20px] px-[30px] font-bold"
           >
-            <span class="hidden text-[5px]">....</span>
-            <br />
-            INVITE FRIENDS AND EARN <span class="text-[#65D9AE]"> MORE </span>
-            AMAZING GIFTS
+            INVITE FRIENDS AND EARN
+            <span class="text-[#65D9AE]">MORE</span> AMAZING GIFTS
           </div>
           <div
-            class="bg-[#191919] md:min-h-[200px] rounded-lg text-[1.2rem] sm:text-[1.8rem] md:text-[2rem] text-white text-center p-[20px] font-bold"
+            class="bg-[#191919] w-[290px] rounded-lg text-[1rem] sm:text-[1.3rem] md:text-[1.4rem] text-white text-center py-[20px] px-[10px] font-bold"
           >
             SHARE YOUR THOUGHTS AND BECOME OUR
-            <span class="text-[#9C73C5]">GAMECHANGER</span>!
+            <span class="text-[#9C73C5]"> GAMECHANGER</span>!
           </div>
         </div>
       </div>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-8 p-[30px] min-h-[300px] w-[100%] lg:w-[80%] mx-auto"
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 p-[30px] w-[100%] lg:w-[80%] mx-auto"
       >
         <div class="flex flex-col gap-6">
           <h3 class="text-[1.4rem] sm:text-[2rem] font-bold">
@@ -131,7 +130,7 @@
               Using your expert football knowledg, buy and sell players live
               during the match as their value goes up and down, including real
               time news, statistics and analysis.To get the most excited players
-              for the Euros 2024 we need you to help us to get the maximum
+              for the Euro's 2024 we need you to help us to get the maximum
               gemeplay for our app.
             </p>
             <p>
@@ -144,18 +143,17 @@
         </div>
         <div class="flex justify-center md:justify-end order-[-1] sm:order-1">
           <img
-            src="/assets/shirt.png"
+            src="./assets/shirt.png"
             alt="shirt"
             class="w-[300px] sm:w-[400px]"
           />
         </div>
       </div>
       <div
-        class="h-[40vh] sm:h-[80vh] bg-cover flex justify-center items-center bg-[url('/assets/videoFrame.png')]"
+        class="h-[40vh] sm:h-[80vh] bg-cover flex justify-center items-center bg-[url('./assets/videoFrame.png')]"
       >
-        <img src="/assets/playBtn.png" alt="" class="h-[80px]" />
+        <img src="./assets/playBtn.png" alt="" class="h-[80px]" />
       </div>
-      {/* */}
       <div class="bg-[#000] p-[20px]">
         <div class="text-center flex justify-center p-[20px]">
           <button
@@ -170,8 +168,8 @@
           </button>
         </div>
         <form
-          action="https://formsubmit.co/support@matchday.pro"
-          method="post"
+          action="https://formsubmit.co/yourmail@test.com"
+          method="POST"
           class="bg-[#191919] w-[100%] md:w-[80%] lg:w-[70%] mx-auto p-[10px] rounded-lg mt-[20px]"
         >
           <div class="mx-auto flex flex-col gap-4">
@@ -190,9 +188,11 @@
               class="w-[95%] mx-auto p-[10px] bg-[#191919] border border-[#838383] rounded-lg focus:outline-none text-[#838383]"
             />
           </div>
-          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+          <div
+            class="text-white py-[10px] pl-3 grid grid-cols-3 w-[95%] mx-auto"
+          >
             <label
-              for="Gender"
+              htmlFor="Gender"
               class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
             >
               GENDER
@@ -209,7 +209,7 @@
                 />
                 <label
                   for="Male"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   Male
                 </label>
@@ -225,7 +225,7 @@
                 />
                 <label
                   for="Female"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg py-[5px] sm:px-[15px] sm:py-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg py-[5px] sm:px-[15px] sm:py-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   Female
                 </label>
@@ -241,14 +241,16 @@
                 />
                 <label
                   for="Other"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   Other
                 </label>
               </div>
             </div>
           </div>
-          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+          <div
+            class="text-white pl-3 w-[95%] mx-auto py-[10px] grid grid-cols-3"
+          >
             <label
               class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
             >
@@ -266,7 +268,7 @@
                 />
                 <label
                   for="NL"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   NL
                 </label>
@@ -282,7 +284,7 @@
                 />
                 <label
                   for="UK"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   UK
                 </label>
@@ -298,14 +300,16 @@
                 />
                 <label
                   for="Others"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[80%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   Other
                 </label>
               </div>
             </div>
           </div>
-          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+          <div
+            class="text-white pl-3 w-[95%] mx-auto py-[10px] grid grid-cols-3"
+          >
             <label
               class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
             >
@@ -323,7 +327,7 @@
                 />
                 <label
                   for="13-18"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   13-18
                 </label>
@@ -339,7 +343,7 @@
                 />
                 <label
                   for="19-35"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   19-35
                 </label>
@@ -355,14 +359,16 @@
                 />
                 <label
                   for="36+"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   36+
                 </label>
               </div>
             </div>
           </div>
-          <div class="text-white px-[20px] py-[10px] grid grid-cols-3">
+          <div
+            class="text-white pl-3 w-[95%] mx-auto py-[10px] grid grid-cols-3"
+          >
             <label
               class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
             >
@@ -380,7 +386,7 @@
                 />
                 <label
                   for="Love to play"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   Love to play
                 </label>
@@ -389,21 +395,23 @@
                 <input
                   type="radio"
                   name="GamePlay"
-                  id="Competitive"
-                  value="Competitive"
+                  id="Competetive"
+                  value="Competetive"
                   required
                   class="w-[10px] h-[10px] bg-[#838383] rounded-full hidden"
                 />
                 <label
-                  for="Competitive"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                  for="Competetive"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
-                  Competitive
+                  Competetive
                 </label>
               </div>
             </div>
           </div>
-          <div class="text-white px-[15px] py-[10px] grid grid-cols-3">
+          <div
+            class="text-white pl-3 w-[95%] mx-auto py-[10px] grid grid-cols-3"
+          >
             <label
               class="font-bold text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.4rem] mt-[10px]"
             >
@@ -422,7 +430,7 @@
                 />
                 <label
                   for="5+"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[85%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   5+
                 </label>
@@ -438,7 +446,7 @@
                 />
                 <label
                   for="15+"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   15+
                 </label>
@@ -454,7 +462,7 @@
                 />
                 <label
                   for="25+"
-                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[90%] inline-block text-center"
+                  class="text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.3rem] border border-[#838383] rounded-lg p-[5px] sm:p-[15px] cursor-pointer w-[95%] inline-block text-center"
                 >
                   25+
                 </label>
@@ -491,51 +499,57 @@
           MANAGER!
         </h3>
         <div class="flex justify-center gap-2">
-          <img src="/assets/appBtn.png" alt="" class="w-[140px] h-[50px]" />
-          <img src="/assets/iosBtn.png" alt="" class="w-[140px] h-[50px]" />
+          <a href="#">
+            <img src="./assets/appBtn.png" alt="" class="w-[140px] h-[50px]" />
+          </a>
+          <a href="#">
+            <img src="./assets/iosBtn.png" alt="" class="w-[140px] h-[50px]" />
+          </a>
         </div>
       </div>
       <div
-        class="bg-[#000] overflow-hidden py-[20px] px-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px] lg:gap-[10px]"
+        class="bg-[#000] overflow-hidden py-[20px] px-[30px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[30px] lg:gap-[10px]"
       >
-        <div class="flex h-[120px]">
+        <div class="flex">
           <div>
             <p class="text-[#65D9AE] font-bold text-[1.4rem]">MATCHDAY.PRO</p>
-            <div class="text-white text-[1.2rem]">
-              <p>Terms & conditions</p>
-              <p>Privacy Policy</p>
-              <p>Contest Rules</p>
+            <div class="text-white text-[1.2rem] flex flex-col">
+              <a href="#" class="hover:text-[#65D9AE]">Terms & conditions</a>
+              <a href="#" class="hover:text-[#65D9AE]">Privacy Policy</a>
+              <a href="#" class="hover:text-[#65D9AE]">Contest Rules</a>
             </div>
           </div>
-          <div class="hidden lg:flex gap-2">
-            <div
-              class="h-[250px] w-[4px] bg-white rotate-[45deg] translate-y-[-60px]"
-            ></div>
-            <div
-              class="h-[250px] w-[2px] bg-white rotate-[45deg] translate-y-[-60px]"
-            ></div>
-          </div>
         </div>
-        <div>
-          <p class="text-[#65D9AE] font-bold text-[1.4rem]">Legal & Info</p>
-          <div class="text-white text-[1.2rem]">
-            <p>Terms & conditions</p>
-            <p>Privacy Policy</p>
-            <p>Contest Rules</p>
+        <div class="hidden lg:flex justify-center gap-3 h-[120px]">
+          <div
+            class="h-[250px] w-[6px] bg-white rotate-[45deg] translate-y-[-60px]"
+          ></div>
+          <div
+            class="h-[250px] w-[3px] bg-white rotate-[45deg] translate-y-[-60px]"
+          ></div>
+        </div>
+        <div class="flex">
+          <div>
+            <p class="text-[#65D9AE] font-bold text-[1.4rem]">Legal & Info</p>
+            <div class="text-white text-[1.2rem] flex flex-col">
+              <a href="#" class="hover:text-[#65D9AE]">Terms & conditions</a>
+              <a href="#" class="hover:text-[#65D9AE]">Privacy Policy</a>
+              <a href="#" class="hover:text-[#65D9AE]">Contest Rules</a>
+            </div>
           </div>
         </div>
         <div>
           <p class="text-[#65D9AE] font-bold text-[1.4rem]">Contact</p>
           <div class="text-white text-[1.2rem]">
-            <p>Email: support@matchday.pro</p>
+            <p>Email: <a href="mailto:support@matchday.pro" class="hover:text-[#65D9AE]">support@matchday.pro</a></p>
           </div>
         </div>
         <div>
           <p class="text-[#65D9AE] font-bold text-[1.4rem]">Legal & Info</p>
-          <div class="text-white text-[1.2rem]">
-            <p>Terms & conditions</p>
-            <p>Privacy Policy</p>
-            <p>Contest Rules</p>
+          <div class="text-white text-[1.2rem] flex flex-col">
+            <a href="#" class="hover:text-[#65D9AE]">Terms & conditions</a>
+            <a href="#" class="hover:text-[#65D9AE]">Privacy Policy</a>
+            <a href="#" class="hover:text-[#65D9AE]">Contest Rules</a>
           </div>
         </div>
       </div>
